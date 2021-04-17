@@ -1,15 +1,30 @@
 {
-    "icecreams": [
-      {
-        "name": "Ice cream Mutcha with chocolate sauce",
-        "description": "greentea icecream and pour chocolate on top",
-        "id": 1
-      },
-      {
-        "name": "Strawberry Toast",
-        "description": "strawberry icecream with toast pour by honey",
-        "id": 2
-      }
-    ],
-    "favList":[]
-  }
+  "icecreams": [
+    {
+      "name": "Mutcha Chocolate",
+      "description": "greentea icecream and pour chocolate on top",
+      "id": 1
+    },
+    {
+      "name": "Strawberry Toast",
+      "description": "strawberry icecream with toast pour by honey",
+      "id": 2
+    },
+    {
+      "name": "Icecream Dip",
+      "description": "icecream with chocolate dip",
+      "id": 3
+    },
+    {
+      "name": "Chocolate Tower",
+      "description": "3 scoop chocolate icecream and have a wipcream with cherry topping",
+      "id": 4
+    },
+    {
+      "name": "Alone Cream",
+      "description": "1 icecream scoop",
+      "id": 5
+    }
+  ],
+  "favList": []
+}

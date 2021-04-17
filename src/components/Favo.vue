@@ -1,12 +1,29 @@
 <template>
-    <div>My Favorite List</div>
+    <img class="w-72 h-72 pb-4 mx-auto" src="../assets/fav.jpg">
+    <div class="bg-white mx-48 rounded-lg">
+        <div class="text-lg pt-2 text-center">My Favorite List</div>
+        <div class="flex text-base pl-2 pb-2" v-for="f in favList" :key="f.id">{{f.name}} 
+        <button v-on:click="removeFromList(f.id)"><img src="../assets/delete.svg"></button></div>
+    </div>
 </template>
 
 <script>
 export default {
-    name: 'fav',
+    emits:['remove-fromlist'],
     props: {
-        msg: String
+        favList:{
+            type: Array,
+            require: true
+        }
+    },
+    data(){
+        return{}
+    },
+    methods:{
+    removeFromList(ic){
+      console.log(ic)
+      this.$emit("remove-fromlist",ic)
+    }
     }
 }
 </script>
