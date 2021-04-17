@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  emits:['add-tofav'],
   props: {
     icecreams: {
       type: Array,

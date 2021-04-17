@@ -1,3 +1,3 @@
 <template>
-    <button class=""><img src="../assets/add.svg" alt=""></button>
+    <button><img src="../assets/add.svg" alt=""></button>
 </template>
