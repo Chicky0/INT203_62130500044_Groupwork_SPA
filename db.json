@@ -1,0 +1,15 @@
+{
+    "icecreams": [
+      {
+        "name": "Ice cream Mutcha with chocolate sauce",
+        "description": "greentea icecream and pour chocolate on top",
+        "id": 1
+      },
+      {
+        "name": "Strawberry Toast",
+        "description": "strawberry icecream with toast pour by honey",
+        "id": 2
+      }
+    ],
+    "favList":[]
+  }
