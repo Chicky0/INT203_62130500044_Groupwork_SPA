@@ -34,6 +34,13 @@ export default {
     },
     async addToFav(menu) {
       var boolean = true;
+      if (this.favList!= []) {
+        for (var key of this.favList) {
+          if (key.id == menu.id) {
+            boolean = false;
+          }
+        }
+      }
       try {
         if (boolean) {
           const res = await fetch("http://localhost:5000/favList", {
@@ -50,7 +57,7 @@ export default {
           const data = await res.json();
           this.favList = [...this.favList, data];
         } else {
-          alert("You already have in FavList");
+          alert("You already have in your FavList");
         }
       } catch (error) {
         console.log(`Could not save! ${error}`);

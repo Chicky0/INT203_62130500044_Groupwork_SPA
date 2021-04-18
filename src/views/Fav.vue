@@ -1,6 +1,7 @@
 <template>
     <div class="fav">
-      <fav :favList="favList" @remove-fromlist="removeIcecreamInFavList"></fav>
+      <fav v-if="have"  :favList="favList" @remove-fromlist="removeIcecreamInFavList"></fav>
+      <!-- <div v-if="!have" class="pl-2 text-center">You don't have any Favorite in List</div> -->
     </div>
 </template>
 
@@ -11,7 +12,7 @@ export default {
     return {  
       favList:[],
       linkFavList: "http://localhost:5000/favList",
-      have: true
+      have: false
     }
   },
   methods: {
@@ -34,6 +35,7 @@ export default {
     },
     async created(){
       this.favList =  await this.fetchFavIcecreams();
+      this.have = true;
   }
 }
 </script>

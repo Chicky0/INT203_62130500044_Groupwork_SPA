@@ -17,7 +17,9 @@ export default {
         }
     },
     data(){
-        return{}
+        return{
+            have: false
+        }
     },
     methods:{
     removeFromList(ic){
