@@ -5,7 +5,7 @@
     <div class="text-base">Menu List...</div>
     <div v-for="i in icecreams" :key="i.id">{{i.id}}. {{ i.name }}
       <br v-if="i.edit">
-      <input v-if="i.edit" type="text" v-model="editName" class="bg-pink-200 rounded-lg placeholder-gray-600 placeholder-opacity-75" placeholder=" Enter Name"/>
+      <input v-if="i.edit" type="text" v-model="editName" class="bg-pink-200 rounded-lg placeholder-gray-600 placeholder-opacity-75" placeholder="           Enter Name"/>
       <cbutton v-if="!i.edit" @click="addToFav(i)"><slot></slot></cbutton>
       <button v-if="!i.edit" @click="editIcecream(i)"><img src="../assets/edit.svg"><slot></slot></button>
       <button v-if="i.edit" @click="confirmName(i)"><img src="../assets/confirm.svg"><slot></slot></button>
