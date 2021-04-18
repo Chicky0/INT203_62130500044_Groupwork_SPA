@@ -1,6 +1,6 @@
 <template>
     <div class="fav">
-      <fav v-if="have"  :favList="favList" @remove-fromlist="removeIcecreamInFavList"></fav>
+      <fav :favList="favList" @remove-fromlist="removeIcecreamInFavList"></fav>
       <!-- <div v-if="!have" class="pl-2 text-center">You don't have any Favorite in List</div> -->
     </div>
 </template>
