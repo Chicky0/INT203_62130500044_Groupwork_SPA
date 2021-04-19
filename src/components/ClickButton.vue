@@ -1,3 +1,3 @@
 <template>
-    <button><img src="../assets/add.svg" alt=""></button>
+    <button class="bg-gray-200 rounded-full"><slot></slot></button>
 </template>

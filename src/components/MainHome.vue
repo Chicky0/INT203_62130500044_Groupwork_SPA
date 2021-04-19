@@ -6,12 +6,12 @@
     <div v-for="i in icecreams" :key="i.id">{{i.id}}. {{ i.name }}
       <br v-if="i.edit">
       <input v-if="i.edit" type="text" v-model="editName" class="bg-pink-200 rounded-lg placeholder-gray-600 placeholder-opacity-75" placeholder="           Enter Name"/>
-      <cbutton v-if="!i.edit" @click="addToFav(i)"><slot></slot></cbutton>
-      <button v-if="!i.edit" @click="editIcecream(i)"><img src="../assets/edit.svg"><slot></slot></button>
-      <button v-if="i.edit" @click="confirmName(i)"><img src="../assets/confirm.svg"><slot></slot></button>
-      <button v-if="i.edit" @click="cancelEdit(i)"><img src="../assets/cancel.svg"><slot></slot></button>
-      <button v-if="!i.show" @click="showDescription(i)"><img src="../assets/expand.svg"></button>
-      <button v-if="i.show" @click="hideDescription(i)"><img src="../assets/less.svg" ></button>
+      <cbutton v-if="!i.edit" @click="addToFav(i)"><img src="../assets/add.svg" alt=""><slot></slot></cbutton>
+      <cbutton v-if="!i.edit" @click="editIcecream(i)"><img src="../assets/edit.svg"><slot></slot></cbutton>
+      <cbutton v-if="i.edit" @click="confirmName(i)"><img src="../assets/confirm.svg"><slot></slot></cbutton>
+      <cbutton v-if="i.edit" @click="cancelEdit(i)"><img src="../assets/cancel.svg"><slot></slot></cbutton>
+      <cbutton v-if="!i.show" @click="showDescription(i)"><img src="../assets/expand.svg"></cbutton>
+      <cbutton v-if="i.show" @click="hideDescription(i)"><img src="../assets/less.svg" ></cbutton>
         <div v-if="i.show">{{ i.description }}</div>
       </div> 
   </div>

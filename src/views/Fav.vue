@@ -35,7 +35,7 @@ export default {
     },
     async created(){
       this.favList =  await this.fetchFavIcecreams();
-      this.have = true;
+      // this.have = true;
   }
 }
 </script>
